@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- <div class="row">
+            <div class="image-container">
+                <img src="img/cir.png" height="200" width="200"
+                    onmouseover= "this.src='img/cir_ro.png';"
+                    onmouseout= "this.src='img/cir.png';"
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/tri.png" height="200" width="200"
+                    onmouseover= "this.src='img/tri_ro.png';"
+                    onmouseout= "this.src='img/tri.png';"                     
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/squ.png" height="200" width="200"
+                    onmouseover= "this.src='img/squ_ro.png';"
+                    onmouseout= "this.src='img/squ.png';"
+                />
+            </div> -->
+            
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" src="ICONS1/2x/icon1@2x.png" height="200" width="200" onmouseover="this.src='ICONS2/2x/icon1ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon1@2x.png';"></div>
+            <div class="image-container"><img id="img2" src="ICONS1/2x/icon2@2x.png" height="200" width="200" onmouseover="this.src='ICONS2/2x/icon2ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon2@2x.png';"/></div>
+            <div class="image-container"><img id="img3" src="ICONS1/2x/icon3@2x.png" height="200" width="200" onmouseover="this.src='ICONS2/2x/icon3ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon3@2x.png';"/></div> 
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="ICONS1/2x/icon4@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon4ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon4@2x.png';"/></div>
+            <div class="image-container"><img id="img5" src="ICONS1/2x/icon5@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon5ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon5@2x.png';"/></div>
+            <div class="image-container"><img id="img6" src="ICONS1/2x/icon6@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon6ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon6@2x.png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="ICONS1/2x/icon7@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon7ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon7@2x.png';"/></div>
+            <div class="image-container"><img id="img8" src="ICONS1/2x/icon8@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon8ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon8@2x.png';"/></div>
+            <div class="image-container"><img id="img9" src="ICONS1/2x/icon9@2x.png" height="200" width="200"onmouseover="this.src='ICONS2/2x/icon9ani@2x.png';"onmouseout="this.src='ICONS1/2x/icon9@2x.png';"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/glitch1.mp3");
+            var sound2 = new buzz.sound("sound/glitch2.mp3");
+            var sound3 = new buzz.sound("sound/glitch3.mp3");
+            var sound4 = new buzz.sound("sound/glitch1.mp3");
+            var sound5 = new buzz.sound("sound/glitch2.mp3");
+            var sound6 = new buzz.sound("sound/glitch3.mp3");
+            var sound7 = new buzz.sound("sound/glitch1.mp3");
+            var sound8 = new buzz.sound("sound/glitch2.mp3");
+            var sound9 = new buzz.sound("sound/glitch3.mp3");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+    </body>
+    
+</html>
